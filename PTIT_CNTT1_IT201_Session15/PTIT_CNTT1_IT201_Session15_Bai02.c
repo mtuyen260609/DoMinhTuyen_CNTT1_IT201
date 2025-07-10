@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Định nghĩa cấu trúc hàng đợi
 struct Queue {
     int *array;
     int front;
