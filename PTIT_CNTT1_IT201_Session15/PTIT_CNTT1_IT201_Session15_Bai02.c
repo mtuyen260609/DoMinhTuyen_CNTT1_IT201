@@ -6,7 +6,7 @@ struct Queue {
     int *array;
     int front;
     int rear;
-    int maxSize;
+    int capacity;
 };
 
 struct Queue* createQueue(int size) {
@@ -14,7 +14,7 @@ struct Queue* createQueue(int size) {
     q->array = (int*)malloc(size * sizeof(int));
     q->front = 0;
     q->rear = -1;
-    q->maxSize = size;
+    q->capacity = size;
     return q;
 }
 void enQueue(Queue* queue, int val) {
